@@ -71,7 +71,7 @@ install_git(){
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP --version)"
 	else
 
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP --version)"
 	fi
 }
 
@@ -86,7 +86,7 @@ install_curl(){
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP -V)"
 	else
 
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP -V)"
 	fi
 }
 
@@ -102,7 +102,7 @@ install_docker(){
 		chmod 777 /var/run/docker.sock
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP version --format '{{json .}}')"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP version --format '{{json .}}')"
 	fi
 }
 
@@ -120,7 +120,7 @@ install_Kubectl(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP version --client)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP version --client)"
 	fi
 }
 
@@ -137,7 +137,7 @@ install_kind(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP version)"
 	fi
 }
 
@@ -156,7 +156,7 @@ install_helm(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP version)"
 	fi
 }
 
@@ -172,7 +172,7 @@ install_jq(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP --version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP --version)"
 	fi
 }
 
@@ -188,7 +188,7 @@ install_yq(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP --version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP --version)"
 	fi
 }
 
@@ -204,7 +204,7 @@ install_nodejs(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP --version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $($APP --version)"
 	fi
 }
 
@@ -222,7 +222,7 @@ install_go(){
 
 		echo "$ICON_SUCCESS [DONE] $APP installed. $($APP version)"
 	else
-		echo "$ICON_SUCCESS [SKIP] $APP found"
+		echo "$ICON_SUCCESS [SKIP] $APP found. $(/usr/local/go/bin/go version)"
 	fi
 }
 
